@@ -1,0 +1,64 @@
+/* ============================================================
+   ANIMAÇÕES — Centralizadas
+   ============================================================ */
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fade-in-up {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes modal-in {
+    from { opacity: 0; transform: scale(0.94) translateY(12px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@keyframes msg-in {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes toast-slide-in {
+    from { opacity: 0; transform: translateX(110%); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes toast-slide-out {
+    to { opacity: 0; transform: translateX(110%); }
+}
+
+@keyframes typing-bounce {
+    0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+    30% { transform: translateY(-5px); opacity: 1; }
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+@keyframes status-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-success) 50%, transparent); }
+    50% { box-shadow: 0 0 0 5px transparent; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-4px); }
+    40% { transform: translateX(4px); }
+    60% { transform: translateX(-4px); }
+    80% { transform: translateX(4px); }
+}
